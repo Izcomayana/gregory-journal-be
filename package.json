@@ -11,6 +11,9 @@
     "deploy": "strapi deploy",
     "postinstall": "if [ $(uname -m) = 'x86_64' ]; then yarn add esbuild@latest; fi"
   },
+  "optionalDependencies": {
+    "@esbuild/darwin-arm64": "0.23.1"
+  },
   "dependencies": {
     "@strapi/plugin-cloud": "4.25.8",
     "@strapi/plugin-i18n": "4.25.8",
