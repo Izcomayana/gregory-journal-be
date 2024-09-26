@@ -8,26 +8,25 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "deploy": "strapi deploy",
-    "postinstall": "node -e \"if (process.platform !== 'darwin') { require('child_process').execSync('yarn add esbuild@latest', { stdio: 'inherit' }); }\""
-  },
-  "optionalDependencies": {
-    "@esbuild/darwin-arm64": "0.23.1"
+    "deploy": "strapi deploy"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "4.25.8",
-    "@strapi/plugin-i18n": "4.25.8",
-    "@strapi/plugin-users-permissions": "4.25.8",
-    "@strapi/strapi": "4.25.8",
-    "axios": "^1.7.7",
-    "better-sqlite3": "8.6.0",
-    "esbuild": "^0.24.0",
-    "koa-cache": "^0.1.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-router-dom": "5.3.4",
-    "styled-components": "5.3.3"
-  },
+  "@strapi/plugin-cloud": "4.25.8",
+  "@strapi/plugin-i18n": "4.25.8",
+  "@strapi/plugin-users-permissions": "4.25.8",
+  "@strapi/strapi": "4.25.8",
+  "axios": "^1.7.7",
+  "better-sqlite3": "8.6.0",
+  "koa-cache": "^0.1.0",
+  "react": "^18.0.0",
+  "react-dom": "^18.0.0",
+  "react-router-dom": "5.3.4",
+  "styled-components": "5.3.3",
+  "esbuild": "^0.23.1"
+},
+"optionalDependencies": {
+  "@esbuild/darwin-arm64": "0.23.1"
+},
   "author": {
     "name": "A Strapi developer"
   },
